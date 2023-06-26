@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>R Programming Roadmap</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: 'Lato', Arial, sans-serif;
+      background-color: #FFF4E0;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 0;
+      font-family: cursive;
+      font-size: larger;
+    }
+
+    .stage {
+      background-color: #FFBF9B;
+      border-radius: 25px;
+      box-shadow: 10px 15px 5px rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .stage-title {
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .resource-list {
+      margin-bottom: 0;
+    }
+
+    .resource-list li {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .resource-list li a {
+      color: #9575DE;
+      text-decoration: none;
+    }
+
+    .container {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.5;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 600px) {
+
+      /* Adjust styles for screens up to 600px wide */
+      .container {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      h2 {
+        font-size: 18px;
+        margin-top: 20px;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+
+      /* Adjust styles for screens up to 400px wide */
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        max-width: 100%;
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 18px;
+      }
+
+      h2 {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-bottom: 40px;
+      border: 0px solid #000;
+      /* Thick border */
+      border-radius: 10px;
+      /* Rounded border */
+      overflow: hidden;
+      /* Hide overflow from rounded corners */
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border: 0.5px ridge #000;
+      border-radius: 2.5px;
+      box-sizing: border-box;
+      /* Include borders in width calculation */
+    }
+
+    th {
+      background-color: #B46060;
+      font-weight: bold;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    a[href] {
+      color: #4D4D4D;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .resource-list li::before {
+      content: "\2022";
+      color: #4D4D4D;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 25px;
+      font-style: italic;
+      font-family: cursive;
+      background-color: #FFBF9B;
+      border-radius: 25px;
+      box-shadow: 10px 15px 5px rgba(0, 0, 0, 0.5);
+      padding: 1px;
+      padding-left: 0.1px;
+      padding-top: 0.1px;
+      padding-right: 0.1px;
+      padding-bottom: 0.1px;
+      margin: auto;
+      width: 50%;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>R Programming Roadmap</h1>
+
+  <div class="stage">
+    <h2 class="stage-title">Stage 1: Introduction to R</h2>
+    <table>
+      <tr>
+        <th>Topic</th>
+        <th>Resources</th>
+      </tr>
+      <tr>
+        <td>Basics of R syntax, data types, variables</td>
+        <td>
+          <ul>
+            <li>Online Course: <a href="https://www.datacamp.com/courses/free-introduction-to-r">Introduction to R
+                Programming</a> on DataCamp</li>
+            <li>Book: <a href="https://r4ds.had.co.nz/">R for Data Science</a> by Hadley Wickham and Garrett Grolemund
+            </li>
+            <li>Interactive Tutorial: <a href="https://www.codeschool.com/courses/try-r">Try R</a> on Code School</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>R and RStudio setup</td>
+        <td>
+          <ul>
+            <li>Online Course: <a href="https://www.edx.org/course/data-science-r-basics">R Basics</a> on Harvard
+              University's edX</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>RStudio interface</td>
+        <td>
+          <ul>
+            <li>YouTube Playlist: <a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6">R
+                Programming for Beginners</a> by MIT OpenCourseWare</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="stage">
+    <h2 class="stage-title">Stage 2: Data Manipulation and Visualization</h2>
+    <table>
+      <tr>
+        <th>Topic</th>
+        <th>Resources</th>
+      </tr>
+      <tr>
+        <td>Data manipulation with dplyr and tidyr</td>
+        <td>
+          <ul>
+            <li>Online Course: <a href="https://www.datacamp.com/courses/dplyr-data-manipulation-r-tutorial">Data
+                Manipulation in R with dplyr</a> on DataCamp</li>
+            <li>Cheatsheet: <a href="https://github.com/rstudio/cheatsheets/blob/main/data-import.pdf">Data Wrangling
+                with dplyr and tidyr</a> by RStudio</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Data visualization with ggplot2</td>
+        <td>
+          <ul>
+            <li>Online Course: <a href="https://www.datacamp.com/courses/data-visualization-with-ggplot2-1">Data
+                Visualization with ggplot2</a> on DataCamp</li>
+            <li>Cheatsheet: <a href="https://github.com/rstudio/cheatsheets/blob/main/data-visualization-2.1.pdf">Data
+                Visualization with ggplot2</a> by RStudio</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Book: <a href="https://r-graphics.org/">R Graphics Cookbook</a> by Winston Chang</td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="stage">
+    <h2 class="stage-title">Stage 3: Statistical Analysis with R</h2>
+    <table>
+      <tr>
+        <th>Topic</th>
+        <th>Resources</th>
+      </tr>
+      <tr>
+        <td>Introduction to statistics</td>
+        <td>
+          <ul>
+            <li>Online Course: <a href="https://www.edx.org/course/statistics-and-r">Introduction to Statistics with
+                R</a> by Harvard</li>
+            <li>Book: <a href="https://www.oreilly.com/library/view/practical-statistics-for/9781491952955/">Practical
+                Statistics for Data Scientists</a> by Peter Bruce, Andrew Bruce, and Peter Gedeck</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Exploratory data analysis (EDA)</td>
+        <td>
+          <ul>
+            <li>Project: <a href="https://www.edx.org/course/r-data-science-capstone-project">R Data Science Capstone
+                Project</a> by Hadley Wickham and Garrett Grolemund</li>
+            <li>Book: <a href="https://r4ds.had.co.nz/">R for Data Science</a> by Hadley Wickham and Garrett Grolemund
+            </li>
+            <li>Book: <a href="https://www.data-science-for-biz.com/">Data Science for Business</a> by Foster Provost
+              and Tom Fawcett</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Hypothesis testing and regression analysis</td>
+        <td>
+          <ul>
+            <li>Package: <a href="https://infer.netlify.app/">infer</a></li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="stage">
+    <h2 class="stage-title">Stage 4: Machine Learning with R</h2>
+    <table>
+      <tr>
+        <th>Topic</th>
+        <th>Resources</th>
+      </tr>
+      <tr>
+        <td>Principles of machine learning</td>
+        <td>
+          <ul>
+            <li>Online Course: <a href="https://www.edx.org/course/data-science-machine-learning">Data Science & Machine
+                Learning</a> by Harvard</li>
+            <li>Book: <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">The Elements of Statistical Learning</a>
+              by Trevor Hastie, Robert Tibshirani, and Jerome Friedman</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Implementing ML algorithms with R</td>
+        <td>
+          <ul>
+            <li>Package: <a href="https://topepo.github.io/caret/index.html">caret</a></li>
+            <li>Package: <a href="https://mlr.mlr-org.com/">mlr</a></li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="stage">
+    <h2 class="stage-title">Stage 5: Advanced Topics and Specializations</h2>
+    <table>
+      <tr>
+        <th>Topic</th>
+        <th>Resources</th>
+      </tr>
+      <tr>
+        <td>Advanced R topics</td>
+        <td>
+          <ul>
+            <li>Online Course: <a href="https://adv-r.hadley.nz/">Advanced R</a> by Hadley Wickham on RStudio Education
+            </li>
+            <li>Book: <a href="https://r-pkgs.org/">R Packages</a> by Hadley Wickham and Jenny Bryan</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Specializations (e.g., bioinformatics, finance, NLP)</td>
+        <td>
+          <ul>
+            <li>Online Course: <a href="https://www.coursera.org/learn/bioconductor">Bioconductor for Genomic Data
+                Science</a> on Coursera</li>
+            <li>Book: <a href="https://www.tidytextmining.com/">Text Mining with R: A Tidy Approach</a> by Julia Silge
+              and David Robinson</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  <div class="footer">
+    <p>Made with much love 🕊</p>
+  </div>
+  <script>
+    // JavaScript to add target="_blank" to all href links selects all the anchor (<a>) elements in the document, and then adds the target="_blank" attribute to each link. This ensures that when a user clicks on a link, the linked page will open in a new tab or window.
+    const links = document.querySelectorAll('a');
+    for (let i = 0; i < links.length; i++) {
+      links[i].setAttribute('target', '_blank');
+    }
+  </script>
+</body>
+</html>
